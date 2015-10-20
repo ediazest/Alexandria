@@ -1,4 +1,4 @@
-package it.jaschke.alexandria.CameraPreview;
+package it.jaschke.alexandria.camera;
 
 /*
  * Barebones implementation of displaying camera preview.
