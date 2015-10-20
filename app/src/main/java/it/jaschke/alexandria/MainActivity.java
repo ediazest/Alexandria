@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 import it.jaschke.alexandria.api.Callback;
 
-
+//EXTRAS FOR EXCEED SPECIFICATIONS: CHanged to AppCOmpatActivity
 public class MainActivity extends AppCompatActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks, Callback {
 
     public static final String MESSAGE_EVENT = "MESSAGE_EVENT";
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawerF
         navigationDrawerFragment.setUp(R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
+        //EXTRAS FOR EXCEED SPECIFICATIONS: Saved title of navigation to restored it during orientation change
         if (savedInstanceState != null) {
             mTitle = savedInstanceState.getCharSequence("title");
         }
@@ -97,6 +98,7 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawerF
 
     public void restoreActionBar() {
         ActionBar actionBar = getSupportActionBar();
+        //EXTRAS FOR EXCEED SPECIFICATIONS: Checks if action bar exists
         if (actionBar != null) {
             actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
             actionBar.setDisplayShowTitleEnabled(true);

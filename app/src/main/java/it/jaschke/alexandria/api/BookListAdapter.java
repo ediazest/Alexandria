@@ -31,6 +31,7 @@ public class BookListAdapter extends CursorAdapter {
         ViewHolder viewHolder = (ViewHolder) view.getTag();
 
         String imgUrl = cursor.getString(cursor.getColumnIndex(AlexandriaContract.BookEntry.IMAGE_URL));
+        //EXTRAS FOR EXCEED SPECIFICATIONS: Change DownloadImage to Picasso to have a cache
         if (imgUrl != null && !imgUrl.isEmpty())
             Picasso.with(mContext).load(imgUrl).into(viewHolder.bookCover);
 

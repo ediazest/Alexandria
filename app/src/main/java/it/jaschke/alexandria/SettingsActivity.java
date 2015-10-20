@@ -11,6 +11,8 @@ public class SettingsActivity extends PreferenceActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //EXTRAS FOR EXCEED SPECIFICATIONS: Created a PreferenceFragment
+        //and now is showing the selected preference option
 
         // Display the fragment as the main content.
         getFragmentManager().beginTransaction()

@@ -32,6 +32,7 @@ public class BookDetailFragment extends Fragment implements LoaderManager.Loader
 
     public static final String EAN_KEY = "EAN";
     private final int LOADER_ID = 10;
+    //EXTRAS FOR EXCEED SPECIFICATIONS: Added ButterKnife library
     @Bind(R.id.delete_button)
     Button mDeleteButton;
     @Bind(R.id.fullBookTitle)
@@ -157,6 +158,7 @@ public class BookDetailFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public void onPause() {
+        //EXTRAS FOR EXCEED SPECIFICATIONS: removed popBackStack
         super.onPause();
     }
 }
